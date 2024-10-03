@@ -66,7 +66,7 @@ Example request:
 ### Parameters
 
 -   `method`: HTTP method (e.g., `POST`, `GET`, etc.) that the endpoint will use.
--   `path`: The custom path for the endpoint (e.g., `/custom_endpoint`, it would be available with full path <HOST>/mock/custom_endpoint).
+-   `path`: The custom path for the endpoint (e.g., `/custom_endpoint`, it would be available with full path `<HOST>/mock/custom_endpoint`).
 -   `whenCompleted`: Determines the behavior after the final response in the sequence:
     -   `"backToFirst"`: Resets the sequence and returns to the first response after all configured responses are executed.
     -   `"useLastResponse"`: Continues using the last response configuration indefinitely, without resetting to the first.
