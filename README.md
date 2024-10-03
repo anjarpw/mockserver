@@ -34,7 +34,7 @@ This project provides a mock server where you can dynamically register and confi
 
 ### Registering an Endpoint
 
-You can register an endpoint by sending a `GET` request to the `/admin/<your_endpoint_key>` path on the server. The request body should include the configuration for the endpoint you want to create.
+You can register an endpoint by sending a `POST` request to the `/admin/<endpoint_keyname>` path on the server. The request body should include the configuration for the endpoint you want to create.
 
 Example request:
 
