@@ -9,6 +9,16 @@ This project provides a mock server where you can dynamically register and confi
 -   Simulate different response scenarios in sequence.
 -   Flexible control of endpoint behavior after all responses have been executed.
 
+## You Need It If
+
+### You are Automating Your Integration Test, With dependencies to 3rd Party:
+In many scenarios, an API service may need to interact with third-party services over the HTTP protocol. The responses from these third-party services can significantly influence the business logic and outcomes of your service. When testing your API service, it's often necessary to control these dependencies, including the behavior of the third-party services. To achieve this, mocking the third-party service and controlling its responses becomes essential.
+We propose a solution where administrators can easily introduce new endpoints in real-time, configure predefined response payloads, and monitor all requests made to these endpoints (In this case: by your API service). This approach allows for comprehensive testing and ensures that the API behaves as expected under various conditions.
+
+### You are Front-End Engineers Who are still Waiting for Backend Part to be Ready:
+As a front-end engineer aiming to thoroughly test your application, it's common for your app to make requests to a server to retrieve data. To ensure robust testing, particularly in handling edge cases, it is often beneficial to mock the server intentionally. This allows you to simulate specific behaviors and responses from the server, helping to validate the application's performance under various conditions.
+
+
 ## You Can Start Debugging, or
 
 1.  Clone the repository `git clone <repository-url>` 
@@ -23,15 +33,6 @@ This project provides a mock server where you can dynamically register and confi
   
 2.  Run `docker-compose up` 
 
-
-## You Need It When...
-
-### Case 1:
-In many scenarios, an API service may need to interact with third-party services over the HTTP protocol. The responses from these third-party services can significantly influence the business logic and outcomes of your service. When testing your API service, it's often necessary to control these dependencies, including the behavior of the third-party services. To achieve this, mocking the third-party service and controlling its responses becomes essential.
-We propose a solution where administrators can easily introduce new endpoints in real-time, configure predefined response payloads, and monitor all requests made to these endpoints (In this case: by your API service). This approach allows for comprehensive testing and ensures that the API behaves as expected under various conditions.
-
-### Case 2:
-As a front-end engineer aiming to thoroughly test your application, it's common for your app to make requests to a server to retrieve data. To ensure robust testing, particularly in handling edge cases, it is often beneficial to mock the server intentionally. This allows you to simulate specific behaviors and responses from the server, helping to validate the application's performance under various conditions.
 
     
 ## How to Use
