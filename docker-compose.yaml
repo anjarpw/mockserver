@@ -5,5 +5,7 @@ services:
     build: .
     ports:
       - "3000:3000"
+      - "6379:6379"
     environment:
       - PORT=3000
+      
